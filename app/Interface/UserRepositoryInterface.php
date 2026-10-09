@@ -2,7 +2,10 @@
 
 namespace App\Interface;
 
+use App\Dto\CreateUserDTO;
+
 interface UserRepositoryInterface
 {
-    function getUsers();
+    public function getUsers();
+    public function createUser(CreateUserDTO $data);
 }
